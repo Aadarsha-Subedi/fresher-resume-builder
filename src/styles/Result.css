@@ -1,0 +1,189 @@
+/* TYPOGRAPHY */
+.result__container * {
+    font-family: "EB Garamond", serif;
+    ;
+}
+
+.name__heading {
+    font-size: var(--fs-base);
+    text-transform: uppercase;
+}
+
+.general__data {
+    font-size: 10.5px;
+}
+
+.main__data {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.work__details {
+    text-align: justify;
+}
+
+.result__hero {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.result__instruction {
+    text-align: center;
+    font-size: var(--fs-xs);
+    color: var(--neutral-900);
+}
+
+.btn__download {
+    font-size: var(--fs-md);
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: var(--neutral-100);
+}
+
+/* LAYOUT */
+.result__container {
+    min-width: 620px;
+    max-width: 620px;
+
+    margin: 0 auto;
+    margin-top: var(--space-xs);
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: var(--space-md);
+
+    box-shadow: 4px 0 4px 0 var(--neutral-500),
+                -4px 0 4px 0 var(--neutral-500);
+
+}
+
+.result__container--info {
+
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: var(--space-md);
+}
+.result__instruction {
+    margin-top: var(--space-xs);
+}
+.resume__container {
+    padding: 51px 58px 53px 58px;
+
+    background-color: white;
+}
+
+.link__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.contacts__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: var(--space-xs);
+}
+
+.contacts__container p:not(:first-child) {
+    padding-left: var(--space-xs);
+    border-left: 1px solid var(--neutral-600);
+}
+
+.university-info__container,
+.university__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.university-details__container {
+    margin-left: var(--space-md);
+}
+
+.work-info__container,
+.work-details__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-details__responsibilities {
+    margin-left: var(--space-sm);
+}
+
+.main-project-info__container,
+.side-project-info__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-project-info__container {
+    margin-top: var(--space-xs);
+}
+
+.download__container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: var(--space-sm);
+}
+
+.btn__download {
+    padding: var(--space-sm) var(--space-lg);
+
+    background-color: var(--primary-400);
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 4px var(--neutral-400);
+    border: 4px solid var(--primary-400);
+
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.btn__download:hover {
+    border: 4px solid white;
+    background: radial-gradient(circle, var(--primary-600) 0%, var(--primary-400) 90%, var(--primary-400) 100%);
+    cursor: pointer;
+}
+
+@media print {
+
+    .header,
+    .result__hero,
+    .btn__download--container {
+        display: none !important;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .resume__container,
+    .resume__container * {
+        visibility: visible;
+    }
+
+    .resume__container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    .general__data {
+        font-size: 16px;
+    }
+    .main__data {
+        font-size: 18px;
+    }
+    .builder__heading {
+        font-size: 18px;
+    }
+    .name__heading {
+        font-size: var(--fs-md);
+    }
+}

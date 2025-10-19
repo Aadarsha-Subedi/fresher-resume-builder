@@ -1,0 +1,23 @@
+/* TYPOGRAPHY */
+.header__heading {
+font-size: var(--fs-base);
+    text-transform: uppercase;
+    letter-spacing: .1ch;
+    text-shadow: 2px 2px 2px var(--neutral-400);
+}
+
+/* LAYOUT */
+.header {
+    padding: var(--space-md);
+
+    background-color: var(--neutral-200);
+
+    box-shadow: 0 4px 4px 0 var(--neutral-500);
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+}

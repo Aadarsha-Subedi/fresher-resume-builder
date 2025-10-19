@@ -1,0 +1,100 @@
+/* TYPOGRAPHY */
+.hero__heading {
+    font-family: "Nunito", sans-serif;
+    font-size: var(--fs-2xl);
+}
+
+.hero__heading,
+.hero__subheading {
+    text-align: center;
+}
+
+.hero__subheading {
+    color: var(--neutral-700);
+    font-weight: bold;
+}
+
+.problems__cta--paragraph {
+    font-size: var(--fs-md);
+    text-align: justify;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.features__cta--paragraph {
+    font-size: var(--fs-md);
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.problems__cta--button,
+.features__cta--button {
+    color: var(--neutral-100);
+    font-weight: bold;
+    font-size: var(--fs-sm);
+}
+
+/* LAYOUT */
+.hero__heading {
+    margin-bottom: var(--space-sm);
+}
+
+.main {
+
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: var(--space-xl) var(--space-lg);
+    margin-top: var(--space-xs);
+
+    box-shadow: -2px 0px 2px 0px var(--neutral-800),
+        2px 0 2px 0px var(--neutral-800);
+
+    background-color: var(--neutral-100);
+}
+
+.problems__cta,
+.features__cta {
+    margin-top: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+
+    background-color: var(--neutral-200);
+
+    border-radius: var(--space-sm);
+
+    box-shadow: 0 1px 1px 2px var(--neutral-400);
+
+}
+
+.problems__cta--icon,
+.features__cta--icon {
+    margin-right: var(--space-sm);
+}
+
+.problems__cta--paragraph:nth-child(1),
+.features__cta--paragraph {
+    margin-bottom: var(--space-sm);
+}
+
+.problems__cta--button,
+.features__cta--button {
+    padding: var(--space-sm) var(--space-md);
+    margin-top: var(--space-xs);
+
+    box-shadow: 0 1px 1px 1px var(--neutral-500);
+
+    border: none;
+    border-radius: var(--space-xs);
+
+    background-color: var(--accent--success-500);
+
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+.problems__cta--button:hover,
+.features__cta--button:hover {
+    background: radial-gradient(circle, var(--accent--success-500) 0%, var(--accent--success-500) 75%, var(--accent--success-600) 100%);
+    transform: scale(1.05);
+    cursor: pointer;
+}

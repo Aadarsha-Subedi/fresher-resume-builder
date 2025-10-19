@@ -1,0 +1,1 @@
+export const forms: string[] = ['general', 'education', 'work', 'university projects', 'additional'];
