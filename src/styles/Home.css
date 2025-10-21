@@ -45,7 +45,6 @@
     margin: 0 auto;
 
     padding: var(--space-xl) var(--space-lg);
-    margin-top: var(--space-xs);
 
     box-shadow: -2px 0px 2px 0px var(--neutral-800),
         2px 0 2px 0px var(--neutral-800);
