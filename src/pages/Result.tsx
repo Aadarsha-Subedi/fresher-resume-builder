@@ -67,7 +67,7 @@ export default function Result(): JSX.Element {
     return (
         <div className='result__container'>
             <div className="result__container--info">
-                <h1 className='result__hero'>Your resume is all set and ready to go. Good luck!</h1>
+                <h1 className='result__hero'>Your final resume is displayed here. Good luck!</h1>
                 <p className="result__instruction">Before printing the file, please disable headers and footers in your print settings for a cleaner result.</p>
             </div>
             <div className="resume__container" ref={resumeRef}>

@@ -49,12 +49,11 @@
     margin: 0 auto;
     margin-top: var(--space-xs);
 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /* border: 1px solid black; */
     padding: var(--space-md);
-
+    /* 
     box-shadow: 4px 0 4px 0 var(--neutral-500),
-                -4px 0 4px 0 var(--neutral-500);
+                -4px 0 4px 0 var(--neutral-500); */
 
 }
 
@@ -64,13 +63,17 @@
     margin: 0 auto;
     margin-bottom: var(--space-md);
 }
+
 .result__instruction {
     margin-top: var(--space-xs);
 }
+
 .resume__container {
     padding: 51px 58px 53px 58px;
 
     background-color: white;
+    box-shadow: 4px 0 4px 0 var(--neutral-500),
+        -4px 0 4px 0 var(--neutral-500);
 }
 
 .link__container {
@@ -174,15 +177,19 @@
         color: black !important;
         box-shadow: none !important;
     }
+
     .general__data {
         font-size: 16px;
     }
+
     .main__data {
         font-size: 18px;
     }
+
     .builder__heading {
         font-size: 18px;
     }
+
     .name__heading {
         font-size: var(--fs-md);
     }

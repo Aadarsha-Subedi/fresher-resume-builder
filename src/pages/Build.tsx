@@ -8,6 +8,9 @@ import Work from '../components/resume-form/Work.tsx';
 import Projects from '../components/resume-form/Projects.tsx';
 import Additional from '../components/resume-form/Additional.tsx';
 
+//PAGES
+import Result from './Result.tsx';
+
 //CONTEXTS
 import { FormContext } from '../contexts/FormContext.ts';
 
@@ -43,6 +46,9 @@ export default function Build(): JSX.Element {
             <div className="builder">
                 {getCurrentForm()}
             </div >
+            <div className="result">
+                <Result />
+            </div>
         </main>
     )
 

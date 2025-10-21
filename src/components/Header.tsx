@@ -5,7 +5,7 @@ import type { JSX } from 'react';
 import { NavLink } from 'react-router-dom';
 
 //ASSETS AND STYLES
-import logoIcon from '../assets/logo.svg';
+import logoIcon from '../assets/logo.png';
 import '../styles/Header.css';
 
 export default function Header(): JSX.Element {
